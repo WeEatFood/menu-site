@@ -2,35 +2,30 @@
 
 import React from 'react';
 import * as ReactBootStrap from 'react-bootstrap';
-// import DankMemes from './Components/DankMemes';
-// import Features from './Components/Features';
-// import Pricing from './Components/Pricing';
-// import MoreDeets from './Components/MoreDeets';
+import Booking from './components/Booking';
+import ContactUs from './components/ContactUs';
+import Faq from './components/Faq';
+import Info from './components/Info'
+import Home from './components/Home'
+import Online from './components/Online'
+import Menu from './components/Menu'
 import NavBar from './components/Navbar';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-// import "./styles/home.sass"
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 
 function App() {
   return (
     <div className='App'>
       <Router>
         <NavBar />
-
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
         <Switch>
-          {/* <Route path='/features' component={Features}></Route>
-            <Features />
-          </Route>
-          <Route path='/pricing' component={Pricing}>
-            <Pricing />
-          </Route>
-          <Route path='/deets' component={MoreDeets}>
-            <MoreDeets />
-          </Route>
-          <Route path='/dankmemes' component={DankMemes}>
-            <DankMemes />
-          </Route> */}
+          <Route exact path='/' component={Home}/>
+          <Route path="/booking" component={Booking}/>/>
+          <Route path="/contact" component={ContactUs}/>/>
+          <Route path="/faq" component={Faq}/>
+          <Route path="/info" component={Info}/>
+          <Route path="/menu" component={Menu}/>
+          <Route path="/online" component={Online}/>
+          <Redirect to="/"/>
         </Switch>
       </Router>
     </div>
