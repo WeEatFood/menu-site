@@ -3,14 +3,16 @@
 import React from 'react';
 import * as ReactBootStrap from 'react-bootstrap';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
+import "../styles/navbar.sass"
 
 const NavBar = () => {
   return (
     <div className='App'>
       <ReactBootStrap.Navbar
+        className="navbar"
         collapseOnSelect
         expand='xl'
-        bg='danger'
+        // bg='$light'
         variant='dark'>
         <ReactBootStrap.Navbar.Brand href='#home'>
           PUBHUB

@@ -6,8 +6,9 @@ import * as ReactBootStrap from 'react-bootstrap';
 // import Features from './Components/Features';
 // import Pricing from './Components/Pricing';
 // import MoreDeets from './Components/MoreDeets';
-import NavBar from './components/Nav/Navbar';
+import NavBar from './components/Navbar';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+// import "./styles/home.sass"
 
 function App() {
   return (
