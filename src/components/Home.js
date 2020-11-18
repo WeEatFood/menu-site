@@ -5,11 +5,11 @@ import Bar from '../assets/pubhub2.jpg'
 import Beer from '../assets/beer.jpg'
 import Rest from '../assets/rest.jpg'
 import Burger from '../assets/burger.jpg'
-import '../styles/home.scss'
+import '../scss/home.scss'
 
 const Home = () => {
   return (
-    <ReactBootStrap.Container className="container-carousel">
+    <ReactBootStrap.Container className="container__carousel">
       <ReactBootStrap.Carousel className="carousel">
         <ReactBootStrap.Carousel.Item>
           <img
@@ -17,7 +17,7 @@ const Home = () => {
             src={ Bar }
             alt="First slide"
           />
-          <ReactBootStrap.Carousel.Caption className="slide__caption-1">
+          <ReactBootStrap.Carousel.Caption className="carousel__caption">
             <h3>First slide label</h3>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </ReactBootStrap.Carousel.Caption>
@@ -29,7 +29,7 @@ const Home = () => {
             alt="Third slide"
           />
 
-          <ReactBootStrap.Carousel.Caption className="slide__caption-2">
+          <ReactBootStrap.Carousel.Caption className="carousel__caption">
             <h3>Second slide label</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </ReactBootStrap.Carousel.Caption>
@@ -41,7 +41,7 @@ const Home = () => {
             alt="Third slide"
           />
 
-          <ReactBootStrap.Carousel.Caption className="slide__caption-3">
+          <ReactBootStrap.Carousel.Caption className="carousel__caption">
             <h3>Third slide label</h3>
             <p>Praesent commodo cursus magna, vel scelerisque nisl
               consectetur.</p>
@@ -54,7 +54,7 @@ const Home = () => {
             alt="Fourth slide"
           />
 
-          <ReactBootStrap.Carousel.Caption className="slide__caption-4">
+          <ReactBootStrap.Carousel.Caption className="carousel__caption">
             <h3>Third slide label</h3>
             <p>Praesent commodo cursus magna, vel scelerisque nisl
               consectetur.</p>
