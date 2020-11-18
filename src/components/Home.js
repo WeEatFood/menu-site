@@ -4,6 +4,7 @@ import * as ReactBootStrap from 'react-bootstrap'
 import Bar from '../assets/pubhub2.jpg'
 import Beer from '../assets/beer.jpg'
 import Rest from '../assets/rest.jpg'
+import Burger from '../assets/burger.jpg'
 import '../styles/home.scss'
 
 const Home = () => {
@@ -41,6 +42,19 @@ const Home = () => {
           />
 
           <ReactBootStrap.Carousel.Caption className="slide__caption-3">
+            <h3>Third slide label</h3>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl
+              consectetur.</p>
+          </ReactBootStrap.Carousel.Caption>
+        </ReactBootStrap.Carousel.Item>
+        <ReactBootStrap.Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={Burger}
+            alt="Fourth slide"
+          />
+
+          <ReactBootStrap.Carousel.Caption className="slide__caption-4">
             <h3>Third slide label</h3>
             <p>Praesent commodo cursus magna, vel scelerisque nisl
               consectetur.</p>
