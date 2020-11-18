@@ -16,9 +16,23 @@
   .carousel__caption {
     position: absolute;
     top: 50%;
-    border: 1px solid black;
     color: $white;
-    @include default-font-mixin;
+
+    h3 {
+      @include review-header(bold)
+    }
+
+    p {
+      @include review-text(normal)
+    }
+  }
+
+  .award {
+    height: 10rem;
+
+    .award_img {
+      z-index: $zindexBackBackdrop;
+      width: 10rem;
+    }
   }
 }
-

@@ -6,6 +6,7 @@ import Beer from '../assets/beer.jpg'
 import Rest from '../assets/rest.jpg'
 import Burger from '../assets/burger.jpg'
 import '../scss/home.scss'
+import Award1 from '../assets/medal.svg'
 
 const Home = () => {
   return (
@@ -61,6 +62,9 @@ const Home = () => {
           </ReactBootStrap.Carousel.Caption>
         </ReactBootStrap.Carousel.Item>
       </ReactBootStrap.Carousel>
+      <div className="award">
+        <img src={Award1} className="award_img" alt="none"/>
+      </div>
     </ReactBootStrap.Container>
   )
 }

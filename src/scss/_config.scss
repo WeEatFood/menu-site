@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=BioRhyme&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 // Images
 //-----------------------------
@@ -33,18 +34,29 @@ $darkest-gray: darken($dark-gray, 17.25%);
 // Font information
 //-----------------------------
 $default-font-family: 'Playfair Display', serif;
+$accent-font-family: 'Montserrat', sans-serif;
 $header-font-family: 'BioRhyme', serif;
 $default-browser-size: 16;
 $default-font-size: 14px;
+$sectionHeading: 24px;
+$headerHeading: 46px;
 $font-color: $dark-gray;
 $anchor-color: $darker-gray;
 $darkest-color: $darkest-gray;
 
-// Font mixens
+// Font mixins
 
-@mixin default-font-mixin {
+@mixin review-header($weight:normal){
   font-family: $default-font-family;
-  font-size: $default-font-size;
+  font-size: $headerHeading;
+  font-weight: $weight;
+  color: $white;
+}
+
+@mixin review-text($weight:normal){
+  font-family: $accent-font-family;
+  font-size: $sectionHeading;
+  font-weight: $weight;
   color: $white;
 }
 
@@ -54,6 +66,7 @@ $zindexModal: 9000;
 $zindexOverlay: 8000;
 $zindexHeader: 7000;
 $zindexBackdrop: 6000;
+$zindexBackBackdrop: 5000;
 
 // Responsive
 //-----------------------------
