@@ -22,11 +22,8 @@
   }
   
   .slide__caption-4 {
-    @extend .slide__caption-1;
+    @extend .carousel__caption;
   }
   
-  .slide__caption-4 {
-    @extend .slide__caption-1;
-  }
 }
 

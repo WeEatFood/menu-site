@@ -5,7 +5,7 @@ import Bar from '../assets/pubhub2.jpg'
 import Beer from '../assets/beer.jpg'
 import Rest from '../assets/rest.jpg'
 import Burger from '../assets/burger.jpg'
-import '../styles/home.scss'
+import '../scss/home.scss'
 
 const Home = () => {
   return (
