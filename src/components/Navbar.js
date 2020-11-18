@@ -20,52 +20,35 @@ const NavBar = () => {
         <ReactBootStrap.Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <ReactBootStrap.Navbar.Collapse id='responsive-navbar-nav'>
           <ReactBootStrap.Nav className='mr-auto'>
-          <Link to='/features'>
-              <ReactBootStrap.Nav.Link href='#features'>
+          <Link to='/booking'>
+              <ReactBootStrap.Nav.Link href='#booking'>
                 BOOK A TABLE
               </ReactBootStrap.Nav.Link>
             </Link>
-            <Link to='/pricing'>
-              <ReactBootStrap.Nav.Link href='#pricing'>
+            <Link to='/online'>
+              <ReactBootStrap.Nav.Link href='#onlline'>
                 ORDER ONLINE
               </ReactBootStrap.Nav.Link>
             </Link>
-            <Link to='/pricing'>
-              <ReactBootStrap.Nav.Link href='#pricing'>
+            <Link to='/menu'>
+              <ReactBootStrap.Nav.Link href='#menu'>
                 MENU
               </ReactBootStrap.Nav.Link>
             </Link>
-            <Link to='/pricing'>
-              <ReactBootStrap.Nav.Link href='#pricing'>
+            <Link to='/info'>
+              <ReactBootStrap.Nav.Link href='#info'>
                 INFO
               </ReactBootStrap.Nav.Link>
             </Link>
-            {/* <ReactBootStrap.NavDropdown
-              title='YEET'
-              id='collasible-nav-dropdown'>
-              <ReactBootStrap.NavDropdown.Item href='#action/3.1'>
-                Action
-              </ReactBootStrap.NavDropdown.Item>
-              <ReactBootStrap.NavDropdown.Item href='#action/3.2'>
-                Another action
-              </ReactBootStrap.NavDropdown.Item>
-              <ReactBootStrap.NavDropdown.Item href='#action/3.3'>
-                Something
-              </ReactBootStrap.NavDropdown.Item>
-              <ReactBootStrap.NavDropdown.Divider />
-              <ReactBootStrap.NavDropdown.Item href='#action/3.4'>
-                Separated link
-              </ReactBootStrap.NavDropdown.Item>
-            </ReactBootStrap.NavDropdown> */}
           </ReactBootStrap.Nav>
           <ReactBootStrap.Nav>
-            <Link to='/deets'>
-              <ReactBootStrap.Nav.Link href='#deets'>
+            <Link to='/faq'>
+              <ReactBootStrap.Nav.Link href='#faq'>
                 FAQS
               </ReactBootStrap.Nav.Link>
             </Link>
-            <Link to='/ContactUs'>
-              <ReactBootStrap.Nav.Link eventKey={2} href='#memes'>
+            <Link to='/contact'>
+              <ReactBootStrap.Nav.Link eventKey={2} href='#contact'>
                 CONTACT US
               </ReactBootStrap.Nav.Link>
             </Link>
