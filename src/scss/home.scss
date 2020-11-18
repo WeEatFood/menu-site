@@ -20,13 +20,5 @@
     color: $white;
     @include default-font-mixin;
   }
-  
-  .slide__caption-4 {
-    @extend .slide__caption-1;
-  }
-  
-  .slide__caption-4 {
-    @extend .slide__caption-1;
-  }
 }
 
