@@ -18,14 +18,19 @@ const NavBar = () => {
         <ReactBootStrap.Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <ReactBootStrap.Navbar.Collapse id='responsive-navbar-nav'>
           <ReactBootStrap.Nav className='mr-auto'>
-            <Link to='/features'>
+          <Link to='/features'>
               <ReactBootStrap.Nav.Link href='#features'>
-                Features
+                BOOK A TABLE
               </ReactBootStrap.Nav.Link>
             </Link>
             <Link to='/pricing'>
               <ReactBootStrap.Nav.Link href='#pricing'>
-                Pricing
+                ORDER ONLINE
+              </ReactBootStrap.Nav.Link>
+            </Link>
+            <Link to='/pricing'>
+              <ReactBootStrap.Nav.Link href='#pricing'>
+                MENU
               </ReactBootStrap.Nav.Link>
             </Link>
             <ReactBootStrap.NavDropdown
