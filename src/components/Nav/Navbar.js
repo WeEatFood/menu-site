@@ -33,7 +33,12 @@ const NavBar = () => {
                 MENU
               </ReactBootStrap.Nav.Link>
             </Link>
-            <ReactBootStrap.NavDropdown
+            <Link to='/pricing'>
+              <ReactBootStrap.Nav.Link href='#pricing'>
+                INFO
+              </ReactBootStrap.Nav.Link>
+            </Link>
+            {/* <ReactBootStrap.NavDropdown
               title='YEET'
               id='collasible-nav-dropdown'>
               <ReactBootStrap.NavDropdown.Item href='#action/3.1'>
@@ -49,17 +54,17 @@ const NavBar = () => {
               <ReactBootStrap.NavDropdown.Item href='#action/3.4'>
                 Separated link
               </ReactBootStrap.NavDropdown.Item>
-            </ReactBootStrap.NavDropdown>
+            </ReactBootStrap.NavDropdown> */}
           </ReactBootStrap.Nav>
           <ReactBootStrap.Nav>
             <Link to='/deets'>
               <ReactBootStrap.Nav.Link href='#deets'>
-                More deets
+                FAQS
               </ReactBootStrap.Nav.Link>
             </Link>
-            <Link to='/dankmemes'>
+            <Link to='/ContactUs'>
               <ReactBootStrap.Nav.Link eventKey={2} href='#memes'>
-                Dank memes
+                CONTACT US
               </ReactBootStrap.Nav.Link>
             </Link>
           </ReactBootStrap.Nav>
