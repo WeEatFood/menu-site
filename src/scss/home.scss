@@ -1,6 +1,6 @@
 @import "config";
 
-.container-carousel {
+.container__carousel {
   width: 100vw;
   height: 100vh;
   z-index: $zindexBackdrop;
@@ -13,21 +13,12 @@
     transform: translate(-50%, -50%);
   }
 
-  .slide__caption-1 {
+  .carousel__caption {
     position: absolute;
     top: 50%;
     border: 1px solid black;
     color: $white;
     @include default-font-mixin;
-
-  }
-
-  .slide__caption-2 {
-    @extend .slide__caption-1;
-  }
-
-  .slide__caption-3 {
-    @extend .slide__caption-1;
   }
 }
 

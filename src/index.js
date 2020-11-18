@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'normalize.css'
-import './styles/_config.scss';
+import './scss/_config.scss';
 import 'bootstrap/dist/css/bootstrap.css';
 
 ReactDOM.render(

@@ -1,60 +1,62 @@
 /** @format */
-import React from 'react';
-import * as ReactBootStrap from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import "../styles/navbar.scss"
+import React from 'react'
+import * as ReactBootStrap from 'react-bootstrap'
+import { LinkContainer } from 'react-router-bootstrap'
+import '../scss/navbar.scss'
 
 const NavBar = () => {
   return (
-    <div className='App'>
+    <div className='container__navbar'>
       <ReactBootStrap.Navbar
         className="navbar"
         collapseOnSelect
         expand='xl'
         variant='dark'>
-        <ReactBootStrap.Navbar.Brand href='#home'>
-          PUBHUB
-        </ReactBootStrap.Navbar.Brand>
-        <ReactBootStrap.Navbar.Toggle aria-controls='responsive-navbar-nav' />
+        <LinkContainer to="/">
+          <ReactBootStrap.Navbar.Brand>
+            PUBHUB
+          </ReactBootStrap.Navbar.Brand>
+        </LinkContainer>
+        <ReactBootStrap.Navbar.Toggle aria-controls='responsive-navbar-nav'/>
         <ReactBootStrap.Navbar.Collapse id='responsive-navbar-nav'>
           <ReactBootStrap.Nav className='mr-auto'>
-          <Link to='/booking'>
-              <ReactBootStrap.Nav.Link href='#booking'>
+            <LinkContainer className to='/booking'>
+              <ReactBootStrap.Nav.Link>
                 BOOK A TABLE
               </ReactBootStrap.Nav.Link>
-            </Link>
-            <Link to='/online'>
-              <ReactBootStrap.Nav.Link href='#onlline'>
+            </LinkContainer>
+            <LinkContainer to='/online'>
+              <ReactBootStrap.Nav.Link>
                 ORDER ONLINE
               </ReactBootStrap.Nav.Link>
-            </Link>
-            <Link to='/menu'>
-              <ReactBootStrap.Nav.Link href='#menu'>
+            </LinkContainer>
+            <LinkContainer to='/menu'>
+              <ReactBootStrap.Nav.Link>
                 MENU
               </ReactBootStrap.Nav.Link>
-            </Link>
-            <Link to='/info'>
-              <ReactBootStrap.Nav.Link href='#info'>
+            </LinkContainer>
+            <LinkContainer to='/info'>
+              <ReactBootStrap.Nav.Link>
                 INFO
               </ReactBootStrap.Nav.Link>
-            </Link>
+            </LinkContainer>
           </ReactBootStrap.Nav>
           <ReactBootStrap.Nav>
-            <Link to='/faq'>
-              <ReactBootStrap.Nav.Link href='#faq'>
+            <LinkContainer to='/faq'>
+              <ReactBootStrap.Nav.Link>
                 FAQS
               </ReactBootStrap.Nav.Link>
-            </Link>
-            <Link to='/contact'>
-              <ReactBootStrap.Nav.Link eventKey={2} href='#contact'>
+            </LinkContainer>
+            <LinkContainer to='/contact'>
+              <ReactBootStrap.Nav.Link eventKey={ 2 }>
                 CONTACT US
               </ReactBootStrap.Nav.Link>
-            </Link>
+            </LinkContainer>
           </ReactBootStrap.Nav>
         </ReactBootStrap.Navbar.Collapse>
       </ReactBootStrap.Navbar>
     </div>
-  );
-};
+  )
+}
 
-export default NavBar;
+export default NavBar

@@ -14,41 +14,46 @@ $tan: #f8e9a1;
 $salmon: #f76c6c;
 $navyblue: #24305e;
 
+// Button mixens
+
+
 // Primary colors
 //-----------------------------
-$blue:                  #3481CF;
-$white:                 #FFFFFF;
-$black:                 #000000;
-$gray:                  #7F7F7F;
+$blue: #3481CF;
+$white: #FFFFFF;
+$black: #000000;
+$gray: #7F7F7F;
 
 // Derivative colors
 //-----------------------------
-$dark-gray:             darken($gray, 23.14%); //#444
-$darker-gray:           darken($dark-gray, 6.6667%); //#333
-$darkest-gray:          darken($dark-gray, 17.25%); //#181818
+$dark-gray: darken($gray, 23.14%);
+$darker-gray: darken($dark-gray, 6.6667%);
+$darkest-gray: darken($dark-gray, 17.25%);
 
 // Font information
 //-----------------------------
-$default-font-family:  'Playfair Display', serif;
+$default-font-family: 'Playfair Display', serif;
 $header-font-family: 'BioRhyme', serif;
 $default-browser-size: 16;
 $default-font-size: 14px;
-$font-color:    $dark-gray;
+$font-color: $dark-gray;
 $anchor-color: $darker-gray;
 $darkest-color: $darkest-gray;
 
+// Font mixens
+
 @mixin default-font-mixin {
-    font-family: $default-font-family;
-    font-size: $default-font-size;
-    color: $white;
+  font-family: $default-font-family;
+  font-size: $default-font-size;
+  color: $white;
 }
 
 // Z-index variable
 //-----------------------------
-$zindexModal   : 9000;
-$zindexOverlay : 8000;
-$zindexHeader  : 7000;
-$zindexBackdrop : 6000;
+$zindexModal: 9000;
+$zindexOverlay: 8000;
+$zindexHeader: 7000;
+$zindexBackdrop: 6000;
 
 // Responsive
 //-----------------------------
