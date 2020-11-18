@@ -1,0 +1,23 @@
+@import "config";
+
+.container-carousel {
+  width: 100vw;
+  height: 100vh;
+  z-index: $zindexBackdrop;
+
+  .carousel {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .slide-1-caption {
+    position: absolute;
+    top: 50%;
+    border: 1px solid black;
+    color: $white;
+    @include default-font-mixin;
+  }
+}

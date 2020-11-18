@@ -1,7 +1,5 @@
 /** @format */
-
 import React from 'react';
-import * as ReactBootStrap from 'react-bootstrap';
 import Booking from './components/Booking';
 import ContactUs from './components/ContactUs';
 import Faq from './components/Faq';

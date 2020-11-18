@@ -1,9 +1,8 @@
 /** @format */
-
 import React from 'react';
 import * as ReactBootStrap from 'react-bootstrap';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
-import "../styles/navbar.sass"
+import { Link } from 'react-router-dom';
+import "../styles/navbar.scss"
 
 const NavBar = () => {
   return (
@@ -12,7 +11,6 @@ const NavBar = () => {
         className="navbar"
         collapseOnSelect
         expand='xl'
-        // bg='$light'
         variant='dark'>
         <ReactBootStrap.Navbar.Brand href='#home'>
           PUBHUB

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+// Images
+//-----------------------------
+$base-img-url: '/assets/pubhub2.jpg';
+
+// Color palette
+//-----------------------------
+$lightblue: #a8dde6;
+$medblue: #374785;
+$tan: #f8e9a1;
+$salmon: #f76c6c;
+$navyblue: #24305e;
+
+// Primary colors
+//-----------------------------
+$blue:                  #3481CF;
+$white:                 #FFFFFF;
+$black:                 #000000;
+$gray:                  #7F7F7F;
+
+// Derivative colors
+//-----------------------------
+$dark-gray:             darken($gray, 23.14%); //#444
+$darker-gray:           darken($dark-gray, 6.6667%); //#333
+$darkest-gray:          darken($dark-gray, 17.25%); //#181818
+
+// Font information
+//-----------------------------
+$default-font-family:  'Playfair Display', serif;
+$header-font-family: 'BioRhyme', serif;
+$default-browser-size: 16;
+$default-font-size: 14px;
+$font-color:    $dark-gray;
+$anchor-color: $darker-gray;
+$darkest-color: $darkest-gray;
+
+@mixin default-font-mixin {
+    font-family: $default-font-family;
+    font-size: $default-font-size;
+    color: $white;
+}
+
+// Z-index variable
+//-----------------------------
+$zindexModal   : 9000;
+$zindexOverlay : 8000;
+$zindexHeader  : 7000;
+$zindexBackdrop : 6000;
+
+// Responsive
+//-----------------------------
+$small-screen-min-width: 320px;
+$small-screen-max-width: 568px;
+$medium-screen-min-width: 768px;
+$medium-screen-max-width: 1024px;
+$large-screen-min-width: 1824px;
+
+
