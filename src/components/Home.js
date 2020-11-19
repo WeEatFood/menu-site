@@ -10,8 +10,8 @@ import Award1 from '../assets/medal.svg'
 
 const Home = () => {
   return (
-    <ReactBootStrap.Container className="container__carousel">
-      <ReactBootStrap.Carousel className="carousel">
+    <ReactBootStrap.Container className="carousel__container">
+      <ReactBootStrap.Carousel className="carousel__inner-container">
         <ReactBootStrap.Carousel.Item>
           <img
             className="d-block w-100"
@@ -63,7 +63,7 @@ const Home = () => {
         </ReactBootStrap.Carousel.Item>
       </ReactBootStrap.Carousel>
       <div className="award">
-        <img src={Award1} className="award_img" alt="none"/>
+        <img src={Award1} className="award__img" alt="none"/>
       </div>
     </ReactBootStrap.Container>
   )

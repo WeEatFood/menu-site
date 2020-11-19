@@ -1,8 +1,18 @@
 @import "_config";
 
 .navbar {
-    background-color: $salmon;
-    font-family: $header-font-family;
-    z-index: $zindexOverlay;
+  background-color: $salmon;
+  font-family: $header-font-family;
+  z-index: $zindexOverlay;
+}
+
+.navbar__logo {
+  height: 100px;
+  width: 200px;
+  //z-index: $zindexModal;
+
+  .navbar__logo__img {
+    background: $base-img-logo;
+  }
 }
 

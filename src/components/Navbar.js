@@ -2,6 +2,7 @@
 import React from 'react'
 import * as ReactBootStrap from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
+// import Logo from '../assets/boulderlogo.png'
 import '../scss/navbar.scss'
 
 const NavBar = () => {
@@ -12,10 +13,8 @@ const NavBar = () => {
         collapseOnSelect
         expand='xl'
         variant='dark'>
-        <LinkContainer to="/">
-          <ReactBootStrap.Navbar.Brand>
-            PUBHUB
-          </ReactBootStrap.Navbar.Brand>
+        <LinkContainer to="/" className="navbar__logo">
+          <a className="navbar__logo__img"></a>
         </LinkContainer>
         <ReactBootStrap.Navbar.Toggle aria-controls='responsive-navbar-nav'/>
         <ReactBootStrap.Navbar.Collapse id='responsive-navbar-nav'>

@@ -1,11 +1,11 @@
 @import "config";
 
-.container__carousel {
+.carousel__container {
   width: 100vw;
   height: 100vh;
   z-index: $zindexBackdrop;
 
-  .carousel {
+  .carousel__inner-container {
     width: 100vw;
     position: absolute;
     top: 50%;
@@ -30,7 +30,7 @@
   .award {
     height: 10rem;
 
-    .award_img {
+    .award__img {
       z-index: $zindexBackBackdrop;
       width: 10rem;
     }
