@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
+import { Switch, Route} from 'react-router-dom';
 import { LinkContainer } from 'react-router-bootstrap'
 import * as ReactBootStrap from 'react-bootstrap'
 import Button from 'react-bootstrap/Button'
@@ -13,46 +13,40 @@ import '../scss/menu.scss'
 
 function Menu() {
     return (
-        <div>
-
             <div className="menu__container">
                 <h1>Menus</h1>
                 <p>Select a menu to view</p>
                 <div className="menu">
-                <LinkContainer to="/menu/appetizers">
-                    <Button  className="menu__btn" variant="outline-dark" size="sm">Appetizers</Button>
-                </LinkContainer>
-                <LinkContainer to="/menu/kitchen">
-                    <Button  className="menu__btn" variant="outline-dark" size="sm">Kitchen</Button>
-                </LinkContainer>
-                <LinkContainer to="/menu/dessert">
-                    <Button  className="menu__btn" variant="outline-dark" size="sm">Dessert</Button>
-                </LinkContainer>
-                <LinkContainer to="/menu/cocktails">
-                    <Button  className="menu__btn" variant="outline-dark" size="sm">Cocktails</Button>
-                </LinkContainer>
-                <LinkContainer to="/menu/brewery">
-                    <Button  className="menu__btn" variant="outline-dark" size="sm">Brewery</Button>
-                </LinkContainer>
-                <LinkContainer to="/menu/wine">
-                    <Button  className="menu__btn" variant="outline-dark" size="sm">Wine</Button>
-                </LinkContainer>
-                <div className="menu__items">
-                <Router>
-                    <Switch>
-                        <Route path="/menu/appetizers" component={appetizers}/>
-                        <Route path="/menu/brewery" component={brewery}/>
-                        <Route path="/menu/cocktails" component={cocktails}/>
-                        <Route path="/menu/dessert" component={dessert}/>
-                        <Route path="/menu/kitchen" component={kitchen}/>
-                        <Route path="/menu/wine" component={wine}/>
-                    </Switch>
-                </Router>
-                </div>
+                    <LinkContainer to="/menu/appetizers">
+                        <Button className="menu__btn" variant="outline-dark" size="sm">Appetizers</Button>
+                    </LinkContainer>
+                    <LinkContainer to="/menu/kitchen">
+                        <Button className="menu__btn" variant="outline-dark" size="sm">Kitchen</Button>
+                    </LinkContainer>
+                    <LinkContainer to="/menu/dessert">
+                        <Button className="menu__btn" variant="outline-dark" size="sm">Dessert</Button>
+                    </LinkContainer>
+                    <LinkContainer to="/menu/cocktails">
+                        <Button className="menu__btn" variant="outline-dark" size="sm">Cocktails</Button>
+                    </LinkContainer>
+                    <LinkContainer to="/menu/brewery">
+                        <Button className="menu__btn" variant="outline-dark" size="sm">Brewery</Button>
+                    </LinkContainer>
+                    <LinkContainer to="/menu/wine">
+                        <Button className="menu__btn" variant="outline-dark" size="sm">Wine</Button>
+                    </LinkContainer>
+                    <div className="menu__items">
+                            <Switch>
+                                <Route path="/menu/appetizers" component={appetizers} />
+                                <Route path="/menu/brewery" component={brewery} />
+                                <Route path="/menu/cocktails" component={cocktails} />
+                                <Route path="/menu/dessert" component={dessert} />
+                                <Route path="/menu/kitchen" component={kitchen} />
+                                <Route path="/menu/wine" component={wine} />
+                            </Switch>
+                    </div>
                 </div>
             </div>
-        </div>
-
     )
 }
 
