@@ -1,8 +1,34 @@
 @import "_config";
 
 .navbar {
-    background-color: $salmon;
-    font-family: $header-font-family;
-    z-index: $zindexOverlay;
+  background-color: $salmon;
+  font-family: $header-font-family;
+  z-index: 1000;
 }
 
+//.navbar__logo {
+//  //height: 100px;
+//  //width: 200px;
+//  z-index: 10;
+//  background-image: $base-img-logo;
+//}
+//  //.navbar__logo__img {
+//  //}
+//
+//.navbar__outer-div{
+//  z-index: 10000;
+//}
+
+.logo {
+  z-index: 10000;
+  position: absolute;
+  top: 0;
+  //height: 5rem;
+  //width: 30rem;
+  transform: translate(17px, -75px)
+}
+
+.navbar__link {
+  transform: translateX(12.5rem);
+
+}

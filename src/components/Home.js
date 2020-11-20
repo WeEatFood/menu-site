@@ -10,36 +10,39 @@ import Award1 from '../assets/medal.svg'
 
 const Home = () => {
   return (
-    <ReactBootStrap.Container className="container__carousel">
-      <ReactBootStrap.Carousel className="carousel">
+    <ReactBootStrap.Container className="carousel__container">
+      <ReactBootStrap.Carousel className="carousel__inner-container">
         <ReactBootStrap.Carousel.Item>
-          <img
+          <ReactBootStrap.Image
             className="d-block w-100"
             src={ Bar }
             alt="First slide"
+            fluid
           />
           <ReactBootStrap.Carousel.Caption className="carousel__caption">
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3>Star Magazine</h3>
+            <p>This restaurant is the best in North-West Colorado! Stop by if your in the boulder area</p>
+            <ReactBootStrap.Image src={Award1} className="award__img" alt="none"/>
           </ReactBootStrap.Carousel.Caption>
         </ReactBootStrap.Carousel.Item>
         <ReactBootStrap.Carousel.Item>
-          <img
+          <ReactBootStrap.Image
             className="d-block w-100"
             src={ Beer }
             alt="Third slide"
+            fluid
           />
-
           <ReactBootStrap.Carousel.Caption className="carousel__caption">
             <h3>Second slide label</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </ReactBootStrap.Carousel.Caption>
         </ReactBootStrap.Carousel.Item>
         <ReactBootStrap.Carousel.Item>
-          <img
+          <ReactBootStrap.Image
             className="d-block w-100"
             src={Rest}
             alt="Third slide"
+            fluid
           />
 
           <ReactBootStrap.Carousel.Caption className="carousel__caption">
@@ -49,10 +52,11 @@ const Home = () => {
           </ReactBootStrap.Carousel.Caption>
         </ReactBootStrap.Carousel.Item>
         <ReactBootStrap.Carousel.Item>
-          <img
+          <ReactBootStrap.Image
             className="d-block w-100"
             src={Burger}
             alt="Fourth slide"
+            fluid
           />
 
           <ReactBootStrap.Carousel.Caption className="carousel__caption">
@@ -62,9 +66,6 @@ const Home = () => {
           </ReactBootStrap.Carousel.Caption>
         </ReactBootStrap.Carousel.Item>
       </ReactBootStrap.Carousel>
-      <div className="award">
-        <img src={Award1} className="award_img" alt="none"/>
-      </div>
     </ReactBootStrap.Container>
   )
 }
