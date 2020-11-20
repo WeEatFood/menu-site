@@ -2,10 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=BioRhyme&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 // Images
 //-----------------------------
 $base-img-url: '/assets/pubhub2.jpg';
+$base-img-logo: '/assets/boulderlogo.png';
 
 // Color palette
 //-----------------------------
@@ -36,6 +39,8 @@ $darkest-gray: darken($dark-gray, 17.25%);
 $default-font-family: 'Playfair Display', serif;
 $accent-font-family: 'Montserrat', sans-serif;
 $header-font-family: 'BioRhyme', serif;
+$review-header-font: 'Dosis', sans-serif;
+$review-text-font: 'Raleway', sans-serif;
 $default-browser-size: 16;
 $default-font-size: 14px;
 $sectionHeading: 24px;
@@ -47,27 +52,30 @@ $darkest-color: $darkest-gray;
 // Font mixins
 
 @mixin review-header($weight:normal){
-  font-family: $default-font-family;
+  font-family: $accent-font-family;
   font-size: $headerHeading;
   font-weight: $weight;
+  //font-style: italic;
   color: $white;
 }
 
 @mixin review-text($weight:normal){
-  font-family: $accent-font-family;
+  font-family: $review-text-font;
   font-size: $sectionHeading;
   font-weight: $weight;
+  //font-style: italic;
   color: $white;
 }
 
 
 // Z-index variable
 //-----------------------------
-$zindexModal: 9000;
-$zindexOverlay: 8000;
-$zindexHeader: 7000;
-$zindexBackdrop: 6000;
-$zindexBackBackdrop: 5000;
+
+$zindexModal: 9;
+$zindexOverlay: 8;
+$zindexHeader: 7;
+$zindexBackdrop: 6;
+$zindexBackBackdrop: 5;
 
 // Responsive
 //-----------------------------

@@ -23,7 +23,7 @@ function App() {
           <Route path="/info" component={Info}/>
           <Route path="/menu" component={Menu}/>
           <Route path="/online" component={Online}/>
-          {/* <Redirect to="/"/> */}
+           <Redirect to="/"/>
         </Switch>
       </Router>
     </div>
