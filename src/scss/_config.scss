@@ -52,10 +52,10 @@ $darkest-color: $darkest-gray;
 // Font mixins
 
 @mixin review-header($weight:normal){
-  font-family: $review-header-font;
+  font-family: $accent-font-family;
   font-size: $headerHeading;
   font-weight: $weight;
-  font-style: italic;
+  //font-style: italic;
   color: $white;
 }
 
@@ -63,7 +63,7 @@ $darkest-color: $darkest-gray;
   font-family: $review-text-font;
   font-size: $sectionHeading;
   font-weight: $weight;
-  font-style: italic;
+  //font-style: italic;
   color: $white;
 }
 
