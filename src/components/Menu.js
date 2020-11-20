@@ -18,7 +18,7 @@ function Menu() {
                 <p>Select a menu to view</p>
                 <div className="menu">
                     <LinkContainer to="/menu/appetizers">
-                        <Button className="menu__btn" variant="outline-dark" size="sm">Appetizers</Button>
+                        <Button className="menu__btn" variant="outline-warning" size="sm">Appetizers</Button>
                     </LinkContainer>
                     <LinkContainer to="/menu/kitchen">
                         <Button className="menu__btn" variant="outline-dark" size="sm">Kitchen</Button>
