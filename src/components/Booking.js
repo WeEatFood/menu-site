@@ -37,7 +37,8 @@ function MyVerticallyCenteredModal(props) {
   return (
     <ReactBootStrap.Modal
       {...props}
-      size="lg"
+      size="sm"
+      variant="outlined"
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
