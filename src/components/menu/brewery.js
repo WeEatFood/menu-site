@@ -2,7 +2,7 @@ import React from 'react'
 
 function brewery() {
     return (
-        <div>
+        <div className="brewery__container">
             brewery
         </div>
     )
