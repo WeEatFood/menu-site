@@ -19,8 +19,9 @@ const Home = () => {
             alt="First slide"
           />
           <ReactBootStrap.Carousel.Caption className="carousel__caption">
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3>Star Magazine</h3>
+            <p>This restaurant is the best in North-West Colorado! Stop by if your in the boulder area</p>
+            <img src={Award1} className="award__img" alt="none"/>
           </ReactBootStrap.Carousel.Caption>
         </ReactBootStrap.Carousel.Item>
         <ReactBootStrap.Carousel.Item>
@@ -29,7 +30,6 @@ const Home = () => {
             src={ Beer }
             alt="Third slide"
           />
-
           <ReactBootStrap.Carousel.Caption className="carousel__caption">
             <h3>Second slide label</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -62,9 +62,6 @@ const Home = () => {
           </ReactBootStrap.Carousel.Caption>
         </ReactBootStrap.Carousel.Item>
       </ReactBootStrap.Carousel>
-      <div className="award">
-        <img src={Award1} className="award__img" alt="none"/>
-      </div>
     </ReactBootStrap.Container>
   )
 }

@@ -17,9 +17,29 @@
     position: absolute;
     top: 50%;
     color: $white;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.7); /* Black w/opacity/see-through */
+    border: 3px solid #f1f1f1;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 44%;
+    height: 20%;
+    padding: 20px;
+    text-align: center;
+    //filter: blur(2px);
+    //-webkit-filter: blur(2px);
+    .award__img {
+      width: 3rem;
+      position: absolute;
+      //top: 0;
+      //right: 0;
+      left: 0;
+      bottom: 0;
+    }
 
     h3 {
-      @include review-header(bold)
+      @include review-header(normal)
     }
 
     p {
@@ -27,12 +47,4 @@
     }
   }
 
-  .award {
-    height: 10rem;
-
-    .award__img {
-      z-index: $zindexBackBackdrop;
-      width: 10rem;
-    }
-  }
 }

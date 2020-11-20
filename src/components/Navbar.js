@@ -2,40 +2,38 @@
 import React from 'react'
 import * as ReactBootStrap from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
-// import Logo from '../assets/boulderlogo.png'
+import Logo from '../assets/boulderlogo.png'
 import '../scss/navbar.scss'
 
 const NavBar = () => {
   return (
     <div className='container__navbar'>
+        <img src={Logo} alt="logo" className="logo"/>
       <ReactBootStrap.Navbar
         className="navbar"
         collapseOnSelect
         expand='xl'
         variant='dark'>
-        <LinkContainer to="/" className="navbar__logo">
-          <a className="navbar__logo__img"></a>
-        </LinkContainer>
         <ReactBootStrap.Navbar.Toggle aria-controls='responsive-navbar-nav'/>
         <ReactBootStrap.Navbar.Collapse id='responsive-navbar-nav'>
           <ReactBootStrap.Nav className='mr-auto'>
             <LinkContainer className to='/booking'>
-              <ReactBootStrap.Nav.Link>
+              <ReactBootStrap.Nav.Link className="navbar__link">
                 BOOK A TABLE
               </ReactBootStrap.Nav.Link>
             </LinkContainer>
             <LinkContainer to='/online'>
-              <ReactBootStrap.Nav.Link>
+              <ReactBootStrap.Nav.Link className="navbar__link">
                 ORDER ONLINE
               </ReactBootStrap.Nav.Link>
             </LinkContainer>
             <LinkContainer to='/menu'>
-              <ReactBootStrap.Nav.Link>
+              <ReactBootStrap.Nav.Link className="navbar__link">
                 MENU
               </ReactBootStrap.Nav.Link>
             </LinkContainer>
             <LinkContainer to='/info'>
-              <ReactBootStrap.Nav.Link>
+              <ReactBootStrap.Nav.Link className="navbar__link">
                 INFO
               </ReactBootStrap.Nav.Link>
             </LinkContainer>
