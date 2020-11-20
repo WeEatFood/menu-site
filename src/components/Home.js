@@ -13,22 +13,24 @@ const Home = () => {
     <ReactBootStrap.Container className="carousel__container">
       <ReactBootStrap.Carousel className="carousel__inner-container">
         <ReactBootStrap.Carousel.Item>
-          <img
+          <ReactBootStrap.Image
             className="d-block w-100"
             src={ Bar }
             alt="First slide"
+            fluid
           />
           <ReactBootStrap.Carousel.Caption className="carousel__caption">
             <h3>Star Magazine</h3>
             <p>This restaurant is the best in North-West Colorado! Stop by if your in the boulder area</p>
-            <img src={Award1} className="award__img" alt="none"/>
+            <ReactBootStrap.Image src={Award1} className="award__img" alt="none"/>
           </ReactBootStrap.Carousel.Caption>
         </ReactBootStrap.Carousel.Item>
         <ReactBootStrap.Carousel.Item>
-          <img
+          <ReactBootStrap.Image
             className="d-block w-100"
             src={ Beer }
             alt="Third slide"
+            fluid
           />
           <ReactBootStrap.Carousel.Caption className="carousel__caption">
             <h3>Second slide label</h3>
@@ -36,10 +38,11 @@ const Home = () => {
           </ReactBootStrap.Carousel.Caption>
         </ReactBootStrap.Carousel.Item>
         <ReactBootStrap.Carousel.Item>
-          <img
+          <ReactBootStrap.Image
             className="d-block w-100"
             src={Rest}
             alt="Third slide"
+            fluid
           />
 
           <ReactBootStrap.Carousel.Caption className="carousel__caption">
@@ -49,10 +52,11 @@ const Home = () => {
           </ReactBootStrap.Carousel.Caption>
         </ReactBootStrap.Carousel.Item>
         <ReactBootStrap.Carousel.Item>
-          <img
+          <ReactBootStrap.Image
             className="d-block w-100"
             src={Burger}
             alt="Fourth slide"
+            fluid
           />
 
           <ReactBootStrap.Carousel.Caption className="carousel__caption">
