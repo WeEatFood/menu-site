@@ -1,6 +1,6 @@
 @import "config";
 
-.appetizer__header{
+.sub__header{
     width: 100%;
     height: 5rem;
     font-family: $default-font-family;
@@ -12,8 +12,6 @@
 
 }
 
-// .menu-item{
-// }
 .menu-item__header{
     text-align: left;
     font-family: $default-font-family;
@@ -22,9 +20,7 @@
     color: $darker-gray;
 }
 
-.menu-item__details{
-    margin-bottom: 0;
-}
+
 
 .menu-item__details--description{
     text-align: left;
