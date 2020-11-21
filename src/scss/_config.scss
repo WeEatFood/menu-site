@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=BioRhyme&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap%27');
 @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
@@ -34,11 +35,14 @@ $dark-gray: darken($gray, 23.14%);
 $darker-gray: darken($dark-gray, 6.6667%);
 $darkest-gray: darken($dark-gray, 17.25%);
 
+$darker-blue: darken($lightblue, 40.0%);
+
 // Font information
 //-----------------------------
 $default-font-family: 'Playfair Display', serif;
 $accent-font-family: 'Montserrat', sans-serif;
 $header-font-family: 'BioRhyme', serif;
+$menu-font-family: 'Vollkorn', serif;
 $review-header-font: 'Dosis', sans-serif;
 $review-text-font: 'Raleway', sans-serif;
 $comment-test-font: 'Lobster', sans-serif;
