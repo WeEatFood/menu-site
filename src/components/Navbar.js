@@ -18,7 +18,7 @@ const NavBar = () => {
         <ReactBootStrap.Navbar.Collapse id='responsive-navbar-nav'>
           <ReactBootStrap.Nav className='mr-auto'>
             <LinkContainer className to='/booking'>
-              <ReactBootStrap.Nav.Link className="navbar__link">
+              <ReactBootStrap.Nav.Link className="navbar__link" style={{ color: "black"}}>
                 BOOK A TABLE
               </ReactBootStrap.Nav.Link>
             </LinkContainer>
@@ -40,12 +40,12 @@ const NavBar = () => {
           </ReactBootStrap.Nav>
           <ReactBootStrap.Nav>
             <LinkContainer to='/faq'>
-              <ReactBootStrap.Nav.Link>
+              <ReactBootStrap.Nav.Link className="navbar--right">
                 FAQS
               </ReactBootStrap.Nav.Link>
             </LinkContainer>
             <LinkContainer to='/contact'>
-              <ReactBootStrap.Nav.Link eventKey={ 2 }>
+              <ReactBootStrap.Nav.Link eventKey={ 2 } className="navbar--right">
                 CONTACT US
               </ReactBootStrap.Nav.Link>
             </LinkContainer>

@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 // Images
 //-----------------------------
 $base-img-url: '/assets/pubhub2.jpg';
@@ -41,10 +41,11 @@ $accent-font-family: 'Montserrat', sans-serif;
 $header-font-family: 'BioRhyme', serif;
 $review-header-font: 'Dosis', sans-serif;
 $review-text-font: 'Raleway', sans-serif;
+$comment-test-font: 'Lobster', sans-serif;
 $default-browser-size: 16;
-$default-font-size: 14px;
-$sectionHeading: 24px;
-$headerHeading: 46px;
+$default-font-size: 24px;
+$sectionHeading: 44px;
+$headerHeading: 26px;
 $font-color: $dark-gray;
 $anchor-color: $darker-gray;
 $darkest-color: $darkest-gray;
@@ -52,7 +53,7 @@ $darkest-color: $darkest-gray;
 // Font mixins
 
 @mixin review-header($weight:normal){
-  font-family: $accent-font-family;
+  font-family: $comment-test-font;
   font-size: $headerHeading;
   font-weight: $weight;
   //font-style: italic;
