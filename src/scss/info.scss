@@ -1,0 +1,30 @@
+@import "config";
+
+.info__container{
+  background-color: $tan;
+}
+
+.sidebarStyle{
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 12px;
+  background: #404040;
+  color: #FFFFFF;
+  z-index: 1 !important;
+  padding: 6px;
+  font-weight: bold;
+}
+
+.mapContainer {
+  position: absolute;
+  border: 1px outset black;
+  margin: 5rem 0rem 2rem 2rem;
+  width: 45%;
+  //height: 50%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}

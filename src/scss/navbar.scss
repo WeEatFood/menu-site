@@ -1,9 +1,13 @@
 @import "_config";
 
 .navbar {
-  background-color: $salmon;
-  font-family: $header-font-family;
+  background-color: $tan;
+  color: $dark-gray;
+  font-family: $review-header-font;
+  font-weight: normal;
   z-index: 1000;
+
+
 }
 
 //.navbar__logo {
@@ -28,7 +32,15 @@
   transform: translate(17px, -75px)
 }
 
+  .navbar--right {
+    color: $medblue !important;
+  }
 .navbar__link {
   transform: translateX(12.5rem);
+  color: $medblue !important;
+
+  &:hover {
+    color: $white;
+  }
 
 }

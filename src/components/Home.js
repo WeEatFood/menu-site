@@ -19,8 +19,8 @@ const Home = () => {
             alt="First slide"
             fluid
           />
-          <ReactBootStrap.Carousel.Caption className="carousel__caption">
-            <h3>Star Magazine</h3>
+          <ReactBootStrap.Carousel.Caption className="carousel__caption" fluid>
+            <h3>-Star Magazine</h3>
             <p>This restaurant is the best in North-West Colorado! Stop by if your in the boulder area</p>
             <ReactBootStrap.Image src={Award1} className="award__img" alt="none"/>
           </ReactBootStrap.Carousel.Caption>
