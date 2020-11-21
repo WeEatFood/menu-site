@@ -5,11 +5,6 @@ import '../scss/info.scss'
 mapboxgl.accessToken = 'pk.eyJ1IjoibWF0dHlhZGFkYSIsImEiOiJja2hxd2ptYWYwMTE4MnFvNXFkd2NtanlyIn0.6qCzdr06dzoP5Gp5YLPDJQ'
 
 class Info extends Component {
-  // var
-  // marker = new mapboxgl.Marker()
-  //   .setLngLat([-105.26701, 40.02291])
-  //   .addTo(map)
-
   constructor (props) {
     super(props)
 
@@ -36,39 +31,10 @@ class Info extends Component {
       })
     })
 
-    map.on('load', function () {
-      map.loadImage(
-        'https://upload.wikimedia.org/wikipedia/commons/7/7c/201408_cat.png',
-        function (error, image) {
-          if (error) throw error
-          map.addImage('cat', image)
-          map.addSource('point', {
-            'type': 'geojson',
-            'data': {
-              'type': 'FeatureCollection',
-              'features': [
-                {
-                  'type': 'Feature',
-                  'geometry': {
-                    'type': 'Point',
-                    'coordinates': [0, 0]
-                  }
-                }
-              ]
-            }
-          })
-          map.addLayer({
-            'id': 'points',
-            'type': 'symbol',
-            'source': 'point',
-            'layout': {
-              'icon-image': 'cat',
-              'icon-size': 0.25
-            }
-          })
-        }
-      )
-    })
+    new mapboxgl.Marker()
+      .setLngLat([-105.26701, 40.02291])
+      .addTo(map)
+
   }
 
   render () {
@@ -79,6 +45,12 @@ class Info extends Component {
             Zoom: { this.state.zoom }</div>
         </div>
         <div ref={ el => this.mapContainer = el } className="mapContainer"/>
+        {/*<div>*/}
+        {/*  <Marker*/}
+        {/*    latitude={ -105.26701 } longitude={ 40.02291 }>*/}
+        {/*    <img src="https://i.imgur.com/MK4NUzI.png" alt="logo"/>*/}
+        {/*  </Marker>*/}
+        {/*</div>*/}
       </div>
     )
   }

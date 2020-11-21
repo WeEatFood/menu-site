@@ -1,7 +1,7 @@
 @import "config";
 
 .info__container{
-  background-color: $tan;
+  background-color: $medblue !important;
 }
 
 .sidebarStyle{
@@ -19,10 +19,9 @@
 
 .mapContainer {
   position: absolute;
-  border: 1px outset black;
-  margin: 5rem 0rem 2rem 2rem;
+  border: 3px inset $tan;
+  margin: 5rem 0 2rem 2rem;
   width: 45%;
-  //height: 50%;
   top: 0;
   right: 0;
   left: 0;

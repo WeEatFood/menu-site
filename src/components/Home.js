@@ -33,8 +33,8 @@ const Home = () => {
             fluid
           />
           <ReactBootStrap.Carousel.Caption className="carousel__caption">
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>-Rolling Stones</h3>
+            <p>They got beer and lots of it!!</p>
           </ReactBootStrap.Carousel.Caption>
         </ReactBootStrap.Carousel.Item>
         <ReactBootStrap.Carousel.Item>
