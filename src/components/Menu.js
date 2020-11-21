@@ -14,8 +14,8 @@ import '../scss/menu.scss'
 function Menu() {
     return (
             <div className="menu__container">
-                <h1>Menus</h1>
-                <p>Select a menu to view</p>
+                <h1 className="menu__header" >Menus</h1>
+                <p className="menu__header--view">Select a menu to view</p>
                 <div className="menu">
                     <LinkContainer to="/menu/appetizers">
                         <Button className="menu__btn" variant="" size="sm">Appetizers</Button>

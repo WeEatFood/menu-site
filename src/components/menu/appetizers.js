@@ -1,4 +1,5 @@
 import React from 'react'
+import Logo from '../../assets/boulderlogo.png'
 import '../../scss/sub-menu.scss'
 
 function appetizers() {
@@ -19,6 +20,9 @@ function appetizers() {
                 <h4 className="menu-item__header">FRIED BRUSSELS</h4>
                 <p className="menu-item__details--description">Sprouts, pickled red onion, radish, soda-pop glaze</p>
                 <p className="menu-item__details--price">11</p>
+            </div>
+            <div className="logo__container">
+            {/* <img src={Logo} alt="logo" className="logo"/> */}
             </div>
         </div>
     )

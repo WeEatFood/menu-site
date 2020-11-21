@@ -6,6 +6,17 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+
+    .menu__header{
+        font-family: $menu-font-family;
+        color: $darker-gray;
+        margin-bottom: 30px;
+    }
+
+    .menu__header--view{
+        color: $medblue;
+        font-size: 10px;
+    }
     
     .menu__btn{
         margin-right: 10px;
