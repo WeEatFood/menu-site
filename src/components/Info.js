@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import mapboxgl from 'mapbox-gl'
+import { Clock } from 'react-feather'
 import '../scss/info.scss'
 
 mapboxgl.accessToken = 'pk.eyJ1IjoibWF0dHlhZGFkYSIsImEiOiJja2hxd2ptYWYwMTE4MnFvNXFkd2NtanlyIn0.6qCzdr06dzoP5Gp5YLPDJQ'
@@ -50,6 +51,38 @@ class Info extends Component {
         <div ref={ el => this.mapContainer = el } className="mapContainer"/>
         <div className="info__divider">
           <hr className="solid"/>
+        </div>
+        <div className="info__hours-container">
+          <h1>Hours</h1>
+          <h6>We are located at 315 pine st. in Boulder CO.</h6>
+          <ul className="info__hours-list">
+            <li><Clock className="info__hours-clock"/>Monday</li>
+            <li>2:00PM - 12:00AM</li>
+          </ul>
+          <ul className="info__hours-list">
+            <li><Clock className="info__hours-clock"/>Tuesday</li>
+            <li>2:00PM - 12:00AM</li>
+          </ul>
+          <ul className="info__hours-list">
+            <li><Clock className="info__hours-clock"/>Wednesday</li>
+            <li>2:00PM - 12:00AM</li>
+          </ul>
+          <ul className="info__hours-list">
+            <li><Clock className="info__hours-clock"/>Thursday</li>
+            <li>2:00PM - 12:00AM</li>
+          </ul>
+          <ul className="info__hours-list">
+            <li><Clock className="info__hours-clock"/>Friday</li>
+            <li>2:00PM - 2:00AM</li>
+          </ul>
+          <ul className="info__hours-list">
+            <li><Clock className="info__hours-clock"/>Saturday</li>
+            <li>2:00PM - 12:00AM</li>
+          </ul>
+          <ul className="info__hours-list">
+            <li><Clock className="info__hours-clock"/>Sunday</li>
+            <li>Closed</li>
+          </ul>
         </div>
       </div>
     )
