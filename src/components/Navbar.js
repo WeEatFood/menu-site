@@ -8,7 +8,9 @@ import '../scss/navbar.scss'
 const NavBar = () => {
   return (
     <div className='container__navbar'>
+      <LinkContainer to="/">
         <img src={Logo} alt="logo" className="logo"/>
+      </LinkContainer>
       <ReactBootStrap.Navbar
         className="navbar"
         collapseOnSelect

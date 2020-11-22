@@ -44,27 +44,83 @@ $review-text-font: 'Raleway', sans-serif;
 $comment-test-font: 'Lobster', sans-serif;
 $default-browser-size: 16;
 $default-font-size: 24px;
-$sectionHeading: 34px;
+$sectionHeading: 24px;
 $headerHeading: 26px;
 $font-color: $dark-gray;
 $anchor-color: $darker-gray;
 $darkest-color: $darkest-gray;
 
+// Typography
+
+$mdc-typography-styles-headline1: (
+        font-family: unquote("Playfair Display"),
+        font-size: 97
+);
+$mdc-typography-styles-headline2: (
+        font-family: unquote("Playfair Display"),
+        font-size: 61
+);
+$mdc-typography-styles-headline3: (
+        font-family: unquote("Playfair Display"),
+        font-size: 48
+);
+$mdc-typography-styles-headline4: (
+        font-family: unquote("Playfair Display"),
+        font-size: 34
+);
+$mdc-typography-styles-headline5: (
+        font-family: unquote("Playfair Display"),
+        font-size: 24
+);
+$mdc-typography-styles-headline6: (
+        font-family: unquote("Playfair Display"),
+        font-size: 20
+);
+$mdc-typography-styles-body1: (
+        font-family: unquote("Montserrat"),
+        font-size: 16
+);
+$mdc-typography-styles-body2: (
+        font-family: unquote("Montserrat"),
+        font-size: 14
+);
+$mdc-typography-styles-subtitle1: (
+        font-family: unquote("Playfair Display"),
+        font-size: 16
+);
+$mdc-typography-styles-subtitle2: (
+        font-family: unquote("Playfair Display"),
+        font-size: 14
+);
+$mdc-typography-styles-button: (
+        font-family: unquote("Montserrat"),
+        font-size: 14
+);
+$mdc-typography-styles-overline: (
+        font-family: unquote("Montserrat"),
+        font-size: 10
+);
+$mdc-typography-styles-caption: (
+        font-family: unquote("Montserrat"),
+        font-size: 12
+);
+
 // Font mixins
 
-@mixin review-header($weight:normal){
+@mixin review-header(){
   font-family: $comment-test-font;
-  font-size: $headerHeading;
-  font-weight: $weight;
-  //font-style: italic;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 0.15px;
   color: $white;
+
 }
 
 @mixin review-text($weight:normal){
-  font-family: $review-text-font;
-  font-size: $sectionHeading;
-  font-weight: $weight;
-  //font-style: italic;
+  font-family: $accent-font-family;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 0.4px;
   color: $white;
 }
 

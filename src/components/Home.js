@@ -30,7 +30,6 @@ const Home = () => {
             className="d-block w-100"
             src={ Beer }
             alt="Third slide"
-            fluid
           />
           <ReactBootStrap.Carousel.Caption className="carousel__caption">
             <h3>-Rolling Stones</h3>
@@ -42,7 +41,6 @@ const Home = () => {
             className="d-block w-100"
             src={Rest}
             alt="Third slide"
-            fluid
           />
 
           <ReactBootStrap.Carousel.Caption className="carousel__caption">
@@ -56,7 +54,6 @@ const Home = () => {
             className="d-block w-100"
             src={Burger}
             alt="Fourth slide"
-            fluid
           />
 
           <ReactBootStrap.Carousel.Caption className="carousel__caption">

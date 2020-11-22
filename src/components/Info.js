@@ -11,17 +11,20 @@ class Info extends Component {
     this.state = {
       lng: -105.26701,
       lat: 40.02291,
-      zoom: 16
+      zoom: 12
     }
   }
 
   componentDidMount () {
     const map = new mapboxgl.Map({
       container: this.mapContainer,
-      style: 'mapbox://styles/mapbox/streets-v11',
+      style: 'mapbox://styles/mapbox/navigation-preview-day-v4',
       center: [this.state.lng, this.state.lat],
       zoom: this.state.zoom
     })
+
+    map.doubleClickZoom.enable()
+    map.boxZoom.enable()
 
     map.on('move', () => {
       this.setState({
@@ -45,12 +48,6 @@ class Info extends Component {
             Zoom: { this.state.zoom }</div>
         </div>
         <div ref={ el => this.mapContainer = el } className="mapContainer"/>
-        {/*<div>*/}
-        {/*  <Marker*/}
-        {/*    latitude={ -105.26701 } longitude={ 40.02291 }>*/}
-        {/*    <img src="https://i.imgur.com/MK4NUzI.png" alt="logo"/>*/}
-        {/*  </Marker>*/}
-        {/*</div>*/}
       </div>
     )
   }
