@@ -18,7 +18,7 @@ class Info extends Component {
   componentDidMount () {
     const map = new mapboxgl.Map({
       container: this.mapContainer,
-      style: 'mapbox://styles/mapbox/navigation-preview-day-v4',
+      style: 'mapbox://styles/mapbox/streets-v11',
       center: [this.state.lng, this.state.lat],
       zoom: this.state.zoom
     })
@@ -48,6 +48,9 @@ class Info extends Component {
             Zoom: { this.state.zoom }</div>
         </div>
         <div ref={ el => this.mapContainer = el } className="mapContainer"/>
+        <div className="info__divider">
+          <hr className="solid"/>
+        </div>
       </div>
     )
   }
