@@ -17,7 +17,7 @@ const Home = () => {
             className="d-block w-100"
             src={ Bar }
             alt="First slide"
-            fluid
+            class="img-fluid lazy"
           />
           <ReactBootStrap.Carousel.Caption className="carousel__caption" fluid>
             <h3>-Star Magazine</h3>
@@ -30,6 +30,7 @@ const Home = () => {
             className="d-block w-100"
             src={ Beer }
             alt="Third slide"
+            class="img-fluid lazy"
           />
           <ReactBootStrap.Carousel.Caption className="carousel__caption">
             <h3>-Rolling Stones</h3>
@@ -41,6 +42,7 @@ const Home = () => {
             className="d-block w-100"
             src={Rest}
             alt="Third slide"
+            class="img-fluid lazy"
           />
 
           <ReactBootStrap.Carousel.Caption className="carousel__caption">
