@@ -1,0 +1,66 @@
+@import "config";
+
+.carousel__container {
+  width: 100vw;
+  height: 100vh;
+  z-index: $zindexBackdrop;
+
+  .carousel__inner-container {
+    width: 100vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .d-block {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    cursor: crosshair;
+    transition: filter 0.3s linear, transform 0.3s linear;
+
+    &:hover {
+      filter: blur(2px)
+    }
+  }
+
+  .carousel__caption {
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    color: $white;
+    background-color: rgb(26, 25, 25); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.7); /* Black w/opacity/see-through */
+    border: 2px outset $tan;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    max-width: 44%;
+    max-height: 10%;
+    min-height: 5%;
+    padding: 1em;
+    text-align: center;
+    //filter: blur(2px);
+    //-webkit-filter: blur(2px);
+
+    &:hover{
+      cursor: crosshair;
+    }
+
+    .award__img {
+      width: 5%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+
+    h3 {
+      @include review-header()
+    }
+
+    p {
+      @include review-text()
+    }
+  }
+
+}
