@@ -6,10 +6,12 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 200px;
 
     .menu__header{
         font-family: $menu-font-family;
         color: $darker-gray;
+        margin-top: 50px;
         margin-bottom: 30px;
     }
 
