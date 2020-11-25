@@ -34,6 +34,7 @@
     font-family: $menu-font-family;
     color: $darker-blue;
     font-size: 9px;
+
 }
 
 .logo__container{
@@ -74,11 +75,20 @@
 
 // ---BREWERY
 
+.brew__container{
+    display: flex;
+    width: 120%;
+    flex-direction: column;
+    align-items: auto;
+
+
+
+}
+
 .brew__header{
     text-align: left;
     font-family: $default-font-family;
     font-size: 9px;
-    font-weight: thin;
     color: $darker-gray;
 }
 
