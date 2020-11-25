@@ -39,7 +39,6 @@ function wine() {
                     <p className="menu-item__details--description">FRANCE</p>
                     <p className="menu-item__details--price">200 PER BOTTLE</p>
 
-
                     <h4 className="sub__list--header">WHITE</h4>
                     <h5 className="menu-item__header">GIOCATO PINOT GRIGIO</h5>
                     <p className="menu-item__details--description">CALIFORNIA</p>
@@ -101,16 +100,16 @@ function wine() {
                     <p className="menu-item__details--price">28 PER BOTTLE</p>
 
                     <h5 className="menu-item__header">CATENA</h5>
-                    <p className="menu-item__details--description">unknown</p>
+                    <p className="menu-item__details--description">ARGENTINA</p>
                     <p className="menu-item__details--price">14 PER GLASS</p>
                     <p className="menu-item__details--price">56 PER BOTTLE</p>
 
                     <h5 className="menu-item__header">CHÂTEAU DE BEAUCASTEL</h5>
-                    <p className="menu-item__details--description">unknown</p>
+                    <p className="menu-item__details--description">FRANCE</p>
                     <p className="menu-item__details--price">160 PER BOTTLE</p>
 
                     <h5 className="menu-item__header">HIGH HEAVEN VINTNERS</h5>
-                    <p className="menu-item__details--description">unknown</p>
+                    <p className="menu-item__details--description">WASHINGTON</p>
                     <p className="menu-item__details--price">14 PER GLASS</p>
                     <p className="menu-item__details--price">52 PER BOTTLE</p>
 
