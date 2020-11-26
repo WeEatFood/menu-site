@@ -3,6 +3,7 @@
 .carousel__container {
   width: 100vw;
   height: 100vh;
+  margin: 0;
   z-index: $zindexBackdrop;
 
   .carousel__inner-container {
@@ -15,6 +16,7 @@
 
   .d-block {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    min-height: auto;
     cursor: crosshair;
     transition: filter 0.3s linear, transform 0.3s linear;
 
@@ -37,7 +39,7 @@
     max-width: 44%;
     max-height: 10%;
     min-height: 5%;
-    padding: 1em;
+    padding-top: 2em;
     text-align: center;
     //filter: blur(2px);
     //-webkit-filter: blur(2px);

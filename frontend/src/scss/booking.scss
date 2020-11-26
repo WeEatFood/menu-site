@@ -1,5 +1,34 @@
 @import "config";
 
-.booking__container{
-  background-color: $tan;
+.booking__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("https://static.ucraft.app/fs/ucraft/userFiles/preview-soulkitchen/images/r41-curaqtors-bg.jpg?v=1585668431");
+  background-repeat: no-repeat;
+  position: relative;
+
+  &:after .div {
+    margin: 3em;
+  }
+
+  .booking__map{
+    z-index: 11;
+  }
+  .booking__inner-container{
+    position: relative;
+    top: 20em ;
+    margin-top: 0;
+  }
+
+  .booking__button {
+    border: 1px solid black;
+    margin-top: 2em;
+      background-color: $tan;
+
+    &:hover {
+      background-color: $dark-gray;
+      color: $white;
+    }
+  }
 }
