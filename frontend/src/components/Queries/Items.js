@@ -9,6 +9,7 @@ const Items = () => {
               content
               image{
                   url
+                  name
               }
               price
           }
@@ -24,7 +25,8 @@ const Items = () => {
         <div key={ data.id }>
           <h1>{ data.title }</h1>
           <body>{ data.content }</body>
-          <img src={ data.image.url } alt="food"/>
+            <img url={data.image.name}/>
+          {/*src={ data.image.name }/>*/}
           <p>{ data.price }</p>
         </div>
       )) }
