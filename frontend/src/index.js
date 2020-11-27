@@ -2,15 +2,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
-import { ApolloProvider } from 'react-apollo'
-import client from './components/Queries/Items'
+import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'normalize.css'
 import './scss/_config.scss'
 import 'bootstrap/dist/css/bootstrap.css'
 
+const client = new ApolloClient({
+  uri: 'http://localhost:1337/graphql',
+  cache: new InMemoryCache()
+})
 
-// TODO error in the client that needs hotfix
 ReactDOM.render(
   <ApolloProvider client={ client }>
     <App/>

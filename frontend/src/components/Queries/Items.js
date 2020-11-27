@@ -20,8 +20,13 @@ const Items = () => {
 
   return (
     <ul>
-      { data.items.map(item => (
-        <li key={ item.id }>{ item.title }</li>
+      { data.items.map(data => (
+        <div key={ data.id }>
+          <h1>{ data.title }</h1>
+          <body>{ data.content }</body>
+          <img src={ data.image.url } alt="food"/>
+          <p>{ data.price }</p>
+        </div>
       )) }
     </ul>
   )
