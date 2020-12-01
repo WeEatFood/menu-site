@@ -5,11 +5,11 @@ const Items = () => {
   const { loading, error, data } = useQuery(gql`
       query Items {
           items {
+              id
               title
               content
-              image{
+              image {
                   url
-                  name
               }
               price
           }
@@ -23,10 +23,10 @@ const Items = () => {
     <ul>
       { data.items.map(data => (
         <div key={ data.id }>
+          <div>{ data.image.url }</div>
           <h1>{ data.title }</h1>
           <body>{ data.content }</body>
-            <img url={data.image.name}/>
-          {/*src={ data.image.name }/>*/}
+          <img src={ data.image } alt="food"/>
           <p>{ data.price }</p>
         </div>
       )) }
