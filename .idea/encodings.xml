@@ -2,6 +2,7 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/backend/.cache/plugins/strapi-plugin-email/admin/src/index.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/backend/.strapi-updater.json" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/backend/package.json" charset="UTF-8" />
   </component>
 </project>
