@@ -18,7 +18,7 @@ function dessert() {
 
             <div className="menu-item">
             <h4 className="menu-item__header">CARAMEL BREAD PUDDING</h4>
-                <p className="menu-item__details--description">House-made seasonal bread pudding with caramel sauce.Ask your server for today's selection</p>
+                <p className="menu-item__details--description">House-made seasonal bread pudding with caramel sauce.</p>
                 <p className="menu-item__details--price">6</p>
             </div>
 

@@ -108,10 +108,38 @@ function brewery() {
                         <p className="menu-item__details--price">8</p>
                     </div>
 
+                    <h5 className="sub__header--brew">BELGIAN PALE ALES</h5>
+
+                    <div className="brew-item">
+                        <h6 className="brew__header">DELIRIUM TREMENS, 8.5%</h6>
+                        <p className="menu-item__details--price">10</p>
+                    </div>
+
+                    <div className="brew-item">
+                        <h6 className="brew__header">DUVEL, 8.5%</h6>
+                        <p className="menu-item__details--price">10</p>
+                    </div>
+
+                    <div className="brew-item">
+                        <h6 className="brew__header">LEFFE BLONDE, 6.6%</h6>
+                        <p className="menu-item__details--price">7</p>
+                    </div>
+
+                    <div className="brew-item">
+                        <h6 className="brew__header">NORTH COAST PRANQSTER, 7.6%</h6>
+                        <p className="menu-item__details--price">6</p>
+                    </div>
+
+                    <div className="brew-item">
+                        <h6 className="brew__header">PIRAAT, 10.5%</h6>
+                        <p className="menu-item__details--price">8</p>
+                    </div>
+
+
+
 
 
                 </div>
-
                 <div className="sub__list">
                     <h5 className="sub__header--brew">AMERICAN PALE ALES</h5>
                     <div className="brew-item">
@@ -241,6 +269,23 @@ function brewery() {
                         <p className="menu-item__details--price">6</p>
                     </div>
 
+                    <h5 className="sub__header--brew">DARK ALES</h5>
+
+                    <div className="brew-item">
+                        <h6 className="brew__header">BOHEMIAN HELLES BOCK, 6.9%</h6>
+                        <p className="menu-item__details--price">6</p>
+                    </div>
+
+                    <div className="brew-item">
+                        <h6 className="brew__header">LEV BLACK LION, 4.5%</h6>
+                        <p className="menu-item__details--price">7</p>
+                    </div>
+
+                    <div className="brew-item">
+                        <h6 className="brew__header">WASATCH DEVASTATOR, 8.0%</h6>
+                        <p className="menu-item__details--price">6</p>
+                    </div>
+
                 </div>
                 <div className="sub__list">
                     <h5 className="sub__header--brew">AMERICAN IPAS</h5>
@@ -363,7 +408,37 @@ function brewery() {
                         <p className="menu-item__details--price">8</p>
                     </div>
 
+                    <h5 className="sub__header--brew">PALE ALES</h5>
 
+                    <div className="brew-item">
+                        <h6 className="brew__header">ANCHOR STEAM, 4.9%</h6>
+                        <p className="menu-item__details--price">6</p>
+                    </div>
+
+                    <div className="brew-item">
+                        <h6 className="brew__header">BOHEMIAN DORTMUNDER, 6.0%</h6>
+                        <p className="menu-item__details--price">5</p>
+                    </div>
+
+                    <div className="brew-item">
+                        <h6 className="brew__header">OMISSION LAGER, 4.6%</h6>
+                        <p className="menu-item__details--price">6</p>
+                    </div>
+                    
+                    <div className="brew-item">
+                        <h6 className="brew__header">SAM ADAMS BOSTON LAGER, 4.9%</h6>
+                        <p className="menu-item__details--price">6</p>
+                    </div>
+
+                    <div className="brew-item">
+                        <h6 className="brew__header">SAMUEL SMITH ORGANIC, 5.0%</h6>
+                        <p className="menu-item__details--price">8</p>
+                    </div>
+
+                    <div className="brew-item">
+                        <h6 className="brew__header">UPSLOPE ROCKY MOUNTAIN, 5.1%</h6>
+                        <p className="menu-item__details--price">7</p>
+                    </div>
 
                 </div>
             </div>
