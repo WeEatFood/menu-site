@@ -39,7 +39,6 @@ function wine() {
                     <p className="menu-item__details--description">FRANCE</p>
                     <p className="menu-item__details--price">200 PER BOTTLE</p>
 
-
                     <h4 className="sub__list--header">WHITE</h4>
                     <h5 className="menu-item__header">GIOCATO PINOT GRIGIO</h5>
                     <p className="menu-item__details--description">CALIFORNIA</p>
@@ -75,13 +74,74 @@ function wine() {
 
                 <div className="sub__list">
                     <h4 className="sub__list--header">RED</h4>
-                    <h5 className="menu-item__header">BIELER PÉRE ET FILS</h5>
+                    <h5 className="menu-item__header">SANTA RITA PINOT NOIR</h5>
+                    <p className="menu-item__details--description">CHILE</p>
+                    <p className="menu-item__details--price">7 PER GLASS</p>
+                    <p className="menu-item__details--price">24 PER BOTTLE</p>
+
+                    <h5 className="menu-item__header">PADRILLOS MALBEC</h5>
+                    <p className="menu-item__details--description">ARGENTINA</p>
+                    <p className="menu-item__details--price">8 PER GLASS</p>
+                    <p className="menu-item__details--price">28 PER BOTTLE</p>
+
+                    <h5 className="menu-item__header">JAMES MICHAEL CABERNET</h5>
+                    <p className="menu-item__details--description">CALIFORNIA</p>
+                    <p className="menu-item__details--price">9 PER GLASS</p>
+                    <p className="menu-item__details--price">28 PER BOTTLE</p>
+                    
+                    <h5 className="menu-item__header">MARQUES DE CACERES</h5>
+                    <p className="menu-item__details--description">SPAIN</p>
+                    <p className="menu-item__details--price">13 PER GLASS</p>
+                    <p className="menu-item__details--price">52 PER BOTTLE</p>
+
+                    <h5 className="menu-item__header">CASTELLO DI VOLPAIA</h5>
+                    <p className="menu-item__details--description">TUSCANY</p>
+                    <p className="menu-item__details--price">15 PER GLASS</p>
+                    <p className="menu-item__details--price">28 PER BOTTLE</p>
+
+                    <h5 className="menu-item__header">CATENA</h5>
+                    <p className="menu-item__details--description">ARGENTINA</p>
+                    <p className="menu-item__details--price">14 PER GLASS</p>
+                    <p className="menu-item__details--price">56 PER BOTTLE</p>
+
+                    <h5 className="menu-item__header">CHÂTEAU DE BEAUCASTEL</h5>
                     <p className="menu-item__details--description">FRANCE</p>
-                    <p className="menu-item__details--price">7</p>
+                    <p className="menu-item__details--price">160 PER BOTTLE</p>
+
+                    <h5 className="menu-item__header">HIGH HEAVEN VINTNERS</h5>
+                    <p className="menu-item__details--description">WASHINGTON</p>
+                    <p className="menu-item__details--price">14 PER GLASS</p>
+                    <p className="menu-item__details--price">52 PER BOTTLE</p>
+
+
 
                     <h4 className="sub__list--header">ROSE</h4>
+                    <h5 className="menu-item__header">BIELER PÉRE ET FILS</h5>
+                    <p className="menu-item__details--description">FRANCE</p>
+                    <p className="menu-item__details--price">7 PER GLASS</p>
+                    <p className="menu-item__details--price">24 PER BOTTLE</p>
 
-                    <h4 className="sub__list--header">PORT</h4>
+                    <h5 className="menu-item__header">VENTURINI LAMBRUSCO ROSÉ</h5>
+                    <p className="menu-item__details--description">SPARKLING ROSE</p>
+                    <p className="menu-item__details--price">8 PER GLASS</p>
+                    <p className="menu-item__details--price">28 PER BOTTLE</p>
+
+                    <h5 className="menu-item__header">MASSERIA LI VELI</h5>
+                    <p className="menu-item__details--description">SALENTO</p>
+                    <p className="menu-item__details--price">14 PER GLASS</p>
+                    <p className="menu-item__details--price">45 PER BOTTLE</p>
+                    
+                    <h5 className="menu-item__header">DOLFO</h5>
+                    <p className="menu-item__details--description">SLOVENIA</p>
+                    <p className="menu-item__details--price">15 PER GLASS</p>
+                    <p className="menu-item__details--price">60 PER BOTTLE</p>
+
+                    <h5 className="menu-item__header">LA SPINETTA SANGIOVESE</h5>
+                    <p className="menu-item__details--description">TUSCANY</p>
+                    <p className="menu-item__details--price">13 PER GLASS</p>
+                    <p className="menu-item__details--price">60 PER BOTTLE</p>
+
+
                 </div>
             </div>
 
