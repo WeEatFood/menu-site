@@ -5,7 +5,7 @@ import ContactUs from './components/ContactUs'
 import Faq from './components/Faq'
 import Info from './components/Info'
 import Home from './components/Home'
-import Items from './components/Queries/Items'
+import Online from './components/Online'
 import Menu from './components/Menu'
 import NavBar from './components/Navbar'
 import {
@@ -27,7 +27,7 @@ function App () {
           <Route path="/faq" component={ Faq }/>
           <Route path="/info" component={ Info }/>
           <Route path="/menu" component={ Menu }/>
-          <Route path="/online" component={ Items }/>
+          <Route path="/online" component={ Online }/>
           <Redirect to="/"/>
         </Switch>
       </Router>
